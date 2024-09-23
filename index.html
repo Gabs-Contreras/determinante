@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/fraction.js/fraction.min.js"></script>
+    <title>Cálculo de Determinante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body-container">
+        <div class="form-container">
+            <h1>Sistema de ecuaciones de 2x2 por Determinante</h1>
+            <h2>Introducir valores por favor</h2>
+            <form id="formulario">
+                <input type="text" id="a11" required>
+                <label for="a11">x</label>
+                
+                <input type="text" id="a12" required>
+                <label for="a12">y =</label>
+                <input type="text" id="a13" required>
+                <br>
+                <input type="text" id="a21" required>
+                <label for="a21">x</label>
+                <input type="text" id="a22" required>
+                <label for="a22">y =</label>
+                <input type="text" id="a23" required>
+                <br>
+                <div class="boton"><button type="submit">Calcular</button></div>
+            </form>
+        </div>
+        <div id="output"></div>
+        <div class="form-container">
+            <button id="nextStep" style="display: none;" class="boton">Siguiente Paso</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
